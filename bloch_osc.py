@@ -71,7 +71,7 @@ for i, idx in enumerate(time_indices):
     axs[i].set_ylim(0, np.max(prob_Psi_xt) * 1.1)
 
 plt.tight_layout()
-plt.savefig("images/evol_xspace.png", dpi=300)
+# plt.savefig("images/evol_xspace.png", dpi=300)
 
 # Subplots for Psi(k,t) --reciprocal-space--
 fig, axs_k = plt.subplots(1, 3, figsize=(10, 4))
@@ -85,7 +85,7 @@ for i, idx in enumerate(time_indices):
     axs_k[i].set_ylim(0, np.max(prob_Psi_kt) * 1.1)
 
 plt.tight_layout()
-plt.savefig("images/evol_kspace.png", dpi=300)
+# plt.savefig("images/evol_kspace.png", dpi=300)
 
 # Density Probability
 # Heat map
@@ -96,13 +96,13 @@ plt.colorbar(label="$|\\Psi(x, t)|^2$")
 plt.title("Bloch Oscillations")
 plt.xlabel("t")
 plt.ylabel("x")
-plt.savefig("images/densityheat.png", dpi=300)
+# plt.savefig("images/densityheat.png", dpi=300)
 
 # Expected value of the moment as a function of time
 plt.figure()
 plt.plot(t, expect_k, "--")
 plt.title(r"$\langle k \rangle$")
 plt.xlabel("t")
-plt.savefig("images/expect_k.png", dpi=300)
+# plt.savefig("images/expect_k.png", dpi=300)
 
 plt.show()

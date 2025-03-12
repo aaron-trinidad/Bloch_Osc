@@ -81,19 +81,11 @@ matplotlib
 
 ## Usage
 
-Make a directory named **images** to save the plots
-
-```bash
-mkdir images
-```
-
 Run the simulation with:
 
 ```bash
 python bloch_osc.py
 ```
-
-Generated plots will be automatically saved in the `images/` directory.
 
 ---
 
